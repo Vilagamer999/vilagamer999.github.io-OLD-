@@ -17,12 +17,12 @@
             },
                 
             {
-                name: 'GBAtemp',
-                link: 'https://gbatemp.net/members/vilagamer999.452560/'
+                name: 'Itch.io',
+                link: 'https://vilagamer999.itch.io/'
             },
                 
             {
-                name: 'Hypixel',
+                name: 'Codepen',
                 link: 'https://hypixel.net/player/Vilagamer999/'
             },
 
@@ -152,7 +152,7 @@
     (function () {
         $.getJSON('https://freegeoip.app/json/', function (data) {
 
-            writeLine(["<span style='font-size: 14px; color: #FF7F50;'>## Hello user welcome to my website!", "<span style='font-size: 14px; color: #06d;'>From</span> Vila <span style='font-size: 14px; color: #06d;'>Import</span> Website"], 40, function () {
+            writeLine(["<span style='font-size: 14px; color: #447e43;'>## Hello user welcome to my website!", "<span style='font-size: 14px; color: #06d;'>From</span> Vila <span style='font-size: 14px; color: #06d;'>Import</span> Website"], 40, function () {
 
                 if (app.skippedIntro)
                 	return;
