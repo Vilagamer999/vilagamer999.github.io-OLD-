@@ -119,7 +119,7 @@
 
     setInterval( function () {
         $(".troll").remove();
-    }, 600);
+    }, 800);
 
     $(".skip").click(function () {
         skipIntro();
@@ -152,7 +152,7 @@
     (function () {
         $.getJSON('https://freegeoip.app/json/', function (data) {
 
-            writeLine(["<span style='font-size: 14px; color: #06d;'>from</span> vila <span style='font-size: 14px; color: #06d;'>import</span> website", "<span style='font-size: 14px; color: #06d;'>vila</span>.print(website)"], 30, function () {
+            writeLine(["<span style='font-size: 14px; color: #FF7F50;'>## Hello user welcome to my website!", "<span style='font-size: 14px; color: #06d;'>From</span> Vila <span style='font-size: 14px; color: #06d;'>Import</span> Website"], 40, function () {
 
                 if (app.skippedIntro)
                 	return;
@@ -160,8 +160,8 @@
                 clearCursor();
 
 
-                writeLine(["Installing packets... <span style='font-size: 14px; color: #0f0;'>[ok!]</span>", "Welcome back, <i style='color: #0f0'>" +  ((data.ip) ? data.ip : usernames[Math.floor(Math.random()*usernames.length)]) 
-                    + "</i>!", "<span style='font-size: 14px; color: #06d;'>vila</span>.print('Welcome user from'+user_country'!')",">>> Welcome user from " + ((data.region_name) ? data.region_name : '!') + " "], 30, 500, function () {
+                writeLine([">> Installing packets... <span style='font-size: 14px; color: #0f0;'>[ok!]</span>", ">> Welcome back, <i style='color: #0f0'>" +  ((data.ip) ? data.ip : usernames[Math.floor(Math.random()*usernames.length)]) 
+                    + "</i>!", "<span style='font-size: 14px; color: #06d;'>vila</span>.print('Welcome user from'+user_country'!')",">>> Welcome user from " + ((data.region_name) ? data.region_name : '!') + "!"], 60, 50, function () {
 
                     if (app.skippedIntro)
                         return;
