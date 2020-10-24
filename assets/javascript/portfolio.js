@@ -45,7 +45,8 @@
             link = $('#marquee').children('a').last();
                 
             if (i != links.length - 1) 
-                $('#marquee').append(' <img class="emoticon" src="assets/others/hi.png"> ');
+                $('#marquee').append(' | ');
+                //<img class="emoticon" src="assets/others/hi.png">
         }
 
         if (window.mobileAndTabletCheck()) {
