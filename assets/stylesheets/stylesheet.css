@@ -6,6 +6,90 @@
     - https://emerald.gg/images/dot.png (2x2 dot, inspiration and pattern CSS)
 */
 
+// menu bar start
+
+.noselect, .file, .window, #menubar {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#menubar{
+  color: #000000;
+  position:relative;
+  font-family: roboto, mono-space;
+  font-size:14px;
+  font-weight:bold;
+  height:20px;
+  background-color:white;
+  border-bottom: 1px solid black;
+  margin-bottom:10px;
+  z-index: 999999;
+}
+
+.menu{
+ position: relative;
+ z-index: 99999;
+ float: left;
+ height: 20px;
+ overflow: hidden;
+ padding-left: 5px;
+ margin-right: 8px;
+ padding-top: 1px;
+ cursor: pointer;
+}
+
+.menu > p{
+  margin: 0px;
+  padding: 0px 5px;
+  height:20px;
+}
+
+.menu:hover{
+  overflow:visible;
+}
+
+.menu p{
+  cursor:pointer;
+}
+
+.menu p:hover, .menu:hover > p {
+  background-color:black;
+  color:white;
+}
+
+.menu .menubox{
+  position: absolute;
+  z-index: 99999;
+  width: auto;
+  min-width: 100px;
+  background-color: #FFF;
+  border: 1px #000000;
+  box-shadow: 3px 3px 6px #000000;
+  white-space: nowrap;
+  padding: 5px;
+  margin-bottom: 5px;
+  cursor: default;
+}
+.menu .item{
+  margin: 0px;
+  padding: 2px 4px;
+}
+
+.menu a{
+  text-decoration:none;
+  color:black;
+}
+.menu p:hover a{
+  background-color:black;
+  color:white;
+}
+
+// menu bar end
+
 html {
 	cursor:url("../others/cursor.png"), default;
 	-webkit-touch-callout: none;
@@ -17,12 +101,12 @@ html {
 }
 
 a {
-	color: #e4e3e3;
+	color: #ffffff;
 	text-decoration: none;
 }
 
 body, input {
-	color: #e4e3e3;
+	color: #ffffff;
 	background-color: #000
 }
 
@@ -39,6 +123,8 @@ body, input {
 
 body {
 	overflow-x: hidden;
+  margin: 0px;
+  border-radius:4px;
 }
 
 input {
@@ -170,3 +256,4 @@ pre {
 ::-webkit-scrollbar {
 	width: 0;
 }
+
