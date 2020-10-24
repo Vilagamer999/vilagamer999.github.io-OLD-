@@ -13,16 +13,20 @@ var _app = function () {
         "Html", 
         "Python", 
         "js",
-        "C++", 
-        "Editor",
+        "C++",
+        "React.js", 
+        "Video Editor",
+        "Audio Visualizer",
+        "Ai",
+        "Audio Mastering",
         "Student",
-        "etc..."
+        "&#129139; More info &#129137;"
     ];
 
     this.titleChanger = function (text, delay) {
         text = text ||
-            ['(⇀‿‿↼)', '(≖‿‿≖)', '(◕‿‿◕)', '(ᵔ◡◡ᵔ)', '(^‿‿^)', '(≖__≖)', '(-__-)'];
-        delay = delay || 2000;
+            ['vol: =', 'vol: ==', 'vol: ===', 'vol: ====', 'vol: ===', 'vol: ==', 'vol: ='];
+        delay = delay || 1;
 
         var counter = 0;
 
@@ -30,7 +34,7 @@ var _app = function () {
             if(counter < text.length) 
                 document.title = text[counter++]; 
             else 
-                document.title = text[counter = 0];
+                document.title = text[counter = 1];
         }, delay);
     }
 
