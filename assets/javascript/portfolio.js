@@ -49,11 +49,11 @@
                 //<img class="emoticon" src="assets/others/hi.png">
         }
 
-        if (window.mobileAndTabletCheck()) {
-            $("#background").replaceWith('<div id="background" style="background-image: url(https://raw.githubusercontent.com/Vilagamer999/vilagamer999.github.io/master/assets/others/mobile.png?token=AHG72NFDIQUYUB7AD3R4TEK6KVG7A);"></div>');
+        //if (window.mobileAndTabletCheck()) {
+            //$("#background").replaceWith('<div id="background" style="background-image: url(https://raw.githubusercontent.com/Vilagamer999/vilagamer999.github.io/master/assets/others/mobile.png?token=AHG72NFDIQUYUB7AD3R4TEK6KVG7A);"></div>');
 
-            app.shouldIgnoreVideo = true;
-        } 
+            //app.shouldIgnoreVideo = true;
+        //} 
 
         app.titleChanger();
         app.iconChanger([
