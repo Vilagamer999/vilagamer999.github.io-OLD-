@@ -20,12 +20,12 @@ var _app = function () {
         "Ai",
         "Audio Mastering",
         "Student",
-        "&#129139; More info &#129137;"
+        "etc."
     ];
 
     this.titleChanger = function (text, delay) {
         text = text ||
-            ['vol: =', 'vol: ==', 'vol: ===', 'vol: ====', 'vol: ===', 'vol: ==', 'vol: ='];
+            ["v", "vi", "vil", "vila", "vila", "vila", "vil", "vi", "v"];
         delay = delay || 1;
 
         var counter = 0;
