@@ -40,12 +40,16 @@ var _app = function () {
     ];
 
     this.titleChanger = function (text, delay) {
-        var x = 0;
-        var text = ["v", "vi", "vil", "vila", "vila", "vila", "vil", "vi", "v", " "];
-        function loop() {
-            document.getElementsByTagName("title")[0].innerHTML = text[x++ % text.length];
-        }
-
+     text = text || 
+      ["v", "vi", "vil", "vila", "vila", "vila", "vil", "vi", "v"];
+     delay = delay || 3;
+     var counter = 0;
+     setInterval(function () {
+      if(counter < text.length) 
+       document.title = text[counter++]; 
+      else 
+       document.title = text[counter = 0];
+     }, delay);
     }
 
     this.iconChanger = function (urls, delay) {
