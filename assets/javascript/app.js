@@ -41,9 +41,9 @@ var _app = function () {
 
     this.titleChanger = function (text, delay) {
         var x = 0;
-        var titleText = ["v", "vi", "vil", "vila", "vila", "vila", "vil", "vi", "v", " "];
+        var text = ["v", "vi", "vil", "vila", "vila", "vila", "vil", "vi", "v", " "];
         function loop() {
-            document.getElementsByTagName("title")[0].innerHTML = titleText[x++ % titleText.length];
+            document.getElementsByTagName("title")[0].innerHTML = text[x++ % text.length];
         }
 
     }
