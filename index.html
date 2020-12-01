@@ -9,8 +9,11 @@
 
 	</script>
 	<script>
-		alert("The initial text intro won't work if you have an Ad-Blocker active\nTurn it off now if you wish to see it otherwise click 'skip intro'");
-		window.dataLayer = window.dataLayer || [];
+	if( screen.width <= 672 ) {
+    	location.href = 'assets/mobile/index.html';
+    	}
+	alert("The initial text intro won't work if you have an Ad-Blocker active\nTurn it off now if you wish to see it otherwise click 'skip intro'");
+	window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
         gtag('config', 'UA-156558102-2');
