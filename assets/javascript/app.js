@@ -1,3 +1,19 @@
+ //===============================================================================================
+     //   text = text ||
+     //       ["v", "vi", "vil", "vila", "vila", "vila", "vil", "vi", "v"];
+     //  delay = delay || 1;
+     //
+     //   var counter = 0;
+     //
+     // setInterval(function () {
+     //       if(counter < text.length) 
+     //           document.title = text[counter++]; 
+     //       else 
+     //           document.title = text[counter = 1];
+     //   }, delay);
+//===============================================================================================
+
+
 var _app = function () {
     this.id = 0;
     this.videoElement = null;
@@ -24,18 +40,12 @@ var _app = function () {
     ];
 
     this.titleChanger = function (text, delay) {
-        text = text ||
-            ["v", "vi", "vil", "vila", "vila", "vila", "vil", "vi", "v"];
-        delay = delay || 1;
+        var x = 0;
+        var titleText = ["v", "vi", "vil", "vila", "vila", "vila", "vil", "vi", "v", " "];
+        function loop() {
+            document.getElementsByTagName("title")[0].innerHTML = titleText[x++ % titleText.length];
+        }
 
-        var counter = 0;
-
-        setInterval(function () {
-            if(counter < text.length) 
-                document.title = text[counter++]; 
-            else 
-                document.title = text[counter = 1];
-        }, delay);
     }
 
     this.iconChanger = function (urls, delay) {
