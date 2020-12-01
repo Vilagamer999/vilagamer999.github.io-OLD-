@@ -1,0 +1,77 @@
+﻿<title>Vila(Mobile)</title>
+<script src="title.js"></script>
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+</head>
+
+<head>
+    <link rel="shortcut icon" type="image/png" href="vg.png" />
+    <link rel="icon" type="image/png" href="vg.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="vg.png" sizes="16x16" />
+</head>
+
+<body>
+
+    <link rel="stylesheet" href="js.html">
+    <link rel="stylesheet" type="css" href="css/stars.css">
+    <link rel="stylesheet" href="animate.css">
+    <link rel="stylesheet" href="css.html">
+
+    <link href="style.css" rel="stylesheet" width="200px" height="200px">
+    <span class="outer">
+<span class="middle">
+<span class="inner">
+<div class="animated fadeInUp"; opacity: 0.1><pre style="font-size: 8px"><h1><a title="Vilagamer999" href="https://github.com/vilagamer999">Vilagamer999</a></h1>
+</pre>
+</div>
+<center>
+<div class="animated fadeInUp1"><img src="dash.png"></img><a href="https://vilagamer999.github.io/"><b class="text">Normal Website</b></a><img src="dash.png"></img>
+</center>
+</div>
+<a href="https://time.is/"><div class="animated fadeIn2"><center><span class="sub_text2" id="clock"></span></div>
+    </center>
+    </div></a>
+    <div class="overlay"></div>
+    </span>
+    </span>
+    </span>
+	<br>
+    <div class="animated fadeInUp"><a href="#"><b class="text2"></b></a></div>
+</body>
+
+<audio autoplay="" loop="" id="player">
+		<source src="music.html">
+		<script>
+		var audio = document.currentScript.parentElement;
+		audio.volume = 0.3;
+		</script>
+		</audio>
+
+<script>
+    update_clock();
+
+    function update_clock() {
+        var currentTime = new Date(),
+            hours = currentTime.getHours(),
+            minutes = currentTime.getMinutes();
+        seconds = currentTime.getSeconds();
+        if (minutes < 10) {
+            minutes = "0" + minutes;
+        }
+        if (seconds < 10) {
+            seconds = "0" + seconds;
+        }
+
+        var clock_element = document.getElementById("clock");
+
+        clock_element.innerHTML = hours + " : " + minutes + " : " + seconds;
+    }
+    setInterval(update_clock, 1000);
+
+</script>
