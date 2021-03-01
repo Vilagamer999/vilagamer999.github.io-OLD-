@@ -244,7 +244,8 @@ pre {
 .footer {
 	position: absolute;
 	bottom: 0;
-	right: 5px;
+	left: 5px;
+	/* right: 5px; */
 }
 
 .trollface-light {
