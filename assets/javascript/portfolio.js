@@ -153,22 +153,22 @@
     (function () {
         $.getJSON('https://freegeoip.app/json/', function (data) {
 
-            writeLine(["<span style='font-size: 14px; color: #447e43;'>## Hello user welcome to my website!", "<span style='font-size: 14px; color: #06d;'>From</span> Vila <span style='font-size: 14px; color: #06d;'>Import</span> Website"], 40, function () {
+            writeLine([""], 1, function () {
 
                 if (app.skippedIntro)
                 	return;
 
                 clearCursor();
 
+                skipIntro();
 
-                writeLine([">> Installing packets... <span style='font-size: 14px; color: #0f0;'>[ok!]</span>", ">> Welcome back, <i style='color: #0f0'>" +  ((data.ip) ? data.ip : usernames[Math.floor(Math.random()*usernames.length)]) 
-                    + "</i>!", "<span style='font-size: 14px; color: #06d;'>vila</span>.print('Welcome user from'+user_country'!')",">>> Welcome user from " + ((data.region_name) ? data.region_name : '!') + "!"], 60, 50, function () {
+                writeLine([""], 1, 1, function () {
 
                     if (app.skippedIntro)
                         return;
 					
                     clearCursor();
-                    writeLine(["<i style='color: #F62459'>Vilagamer999 #9999</i>"], 120, 500, function () {
+                    writeLine([""], 1, 1, function () {
 
                         timeouts.push(setTimeout(function () {
 
@@ -181,9 +181,9 @@
 
                                 skipIntro();
 
-                            }, 500);
+                            }, 1);
 
-                        }, 1000));
+                        }, 1));
 
                     });
 
