@@ -71,9 +71,9 @@
         app.audioElement.currentTime = $.cookie('videoTime');
     }
 
-    document.addEventListener('contextmenu', function (event) { 
-        event.preventDefault() 
-    });
+   // document.addEventListener('contextmenu', function (event) { 
+     //   event.preventDefault() 
+   //});
 
     $(window).on('keydown', function () {
         if (event.keyCode == 123)
