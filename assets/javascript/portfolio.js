@@ -153,7 +153,7 @@
     (function () {
         $.getJSON('https://freegeoip.app/json/', function (data) {
 
-            writeLine([""], 1, function () {
+            writeLine(["."], 1, function () {
 
                 if (app.skippedIntro)
                 	return;
@@ -162,13 +162,13 @@
 
                 skipIntro();
 
-                writeLine([""], 1, 1, function () {
+                writeLine(["."], 1, 1, function () {
 
                     if (app.skippedIntro)
                         return;
 					
                     clearCursor();
-                    writeLine([""], 1, 1, function () {
+                    writeLine(["."], 1, 1, function () {
 
                         timeouts.push(setTimeout(function () {
 
