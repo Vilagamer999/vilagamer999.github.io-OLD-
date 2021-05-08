@@ -165,9 +165,18 @@
             </script>
         </audio>
 	    
-	<picture id="background">
+	<video id="background" loop="">
+            <source src="assets/others/vid/2.mp4" type="video/mp4">
+            <script>
+                var video = document.getElementById("background");
+
+                app.videoElement = video;
+                app.videoElement.volume = 0;
+            </script>
+        </video>
+	<!--<picture id="background">
             <source src="assets/others/breath.gif" type="image">
-        </picture>
+        </picture>-->
         <!--<source src="assets/others/breath.gif" type="image/gif">-->
     </div>
 
